@@ -7,6 +7,9 @@ using SeleniumPOMWalkthrough.lib.pages;
 using SeleniumPOMWalkthrough.tests.utils;
 using TechTalk.SpecFlow.Assist;
 
+[assembly: Parallelizable(ParallelScope.Fixtures)]
+[assembly: LevelOfParallelism(4)]
+
 namespace SeleniumPOMWalkthrough.BDD
 {
     public class AP_SharedSteps
