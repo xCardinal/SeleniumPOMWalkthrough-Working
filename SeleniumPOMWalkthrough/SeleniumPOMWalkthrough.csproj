@@ -122,6 +122,7 @@
     <None Include="app.config" />
     <None Include="BDD\AP_Signin.feature" />
     <None Include="BDD\Inventory.feature" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
