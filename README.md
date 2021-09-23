@@ -1,3 +1,4 @@
-# SeleniumPOMWalkthrough-Working
+# SeleniumPOMWalkthrough
 
-Created tests using specflow and selenium.
+[LivingDoc](SeleniumPOMWalkthrough-Working/LivingDoc.html)
+
