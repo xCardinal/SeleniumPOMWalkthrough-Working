@@ -20,22 +20,23 @@ namespace SeleniumPOMWalkthrough.BDD
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Inventory")]
-    public partial class InventoryFeature
+    [NUnit.Framework.DescriptionAttribute("FirstUserJourney")]
+    public partial class FirstUserJourneyFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Inventory.feature"
+#line 1 "FirstUserJourney.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "Inventory", "\tSimple calculator for adding two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BDD", "FirstUserJourney", "\tAs a registred used of souce demo website\r\n\tI want to be able to purchase a back" +
+                    "pack\r\n\tSo that I can carry things.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,14 +76,16 @@ namespace SeleniumPOMWalkthrough.BDD
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add Sauce Labs Backpack to the cart")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("userjourney")]
+        [NUnit.Framework.CategoryAttribute("happypath")]
         public virtual void AddSauceLabsBackpackToTheCart()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
+                    "userjourney",
+                    "happypath"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Sauce Labs Backpack to the cart", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 5
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -102,20 +105,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                             "Username",
                             "Password"});
-                table7.AddRow(new string[] {
+                table6.AddRow(new string[] {
                             "standard_user",
                             "secret_sauce"});
-#line 6
- testRunner.Given("I login successfully with the credentials", ((string)(null)), table7, "Given ");
+#line 8
+ testRunner.Given("I login", ((string)(null)), table6, "Given ");
 #line hidden
-#line 9
- testRunner.When("I click the Backpack\'s ADD TO CART button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
+ testRunner.When("ADD TO CART button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
- testRunner.Then("Cart\'s Badge number goes up by one", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 12
+ testRunner.Then("Cart\'s Badge goes up", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

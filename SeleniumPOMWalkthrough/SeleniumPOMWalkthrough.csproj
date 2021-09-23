@@ -109,6 +109,7 @@
     <Compile Include="BDD\AP_SharedSteps.cs" />
     <Compile Include="BDD\AP_SigninSteps.cs" />
     <Compile Include="BDD\InventorySteps.cs" />
+    <Compile Include="BDD\UserJourney_001Steps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\pages\AP_HomePage.cs" />
     <Compile Include="lib\pages\AP_UserPage.cs" />
@@ -123,6 +124,7 @@
     <None Include="BDD\AP_Signin.feature" />
     <None Include="BDD\Inventory.feature" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="BDD\FirstUserJourney.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
