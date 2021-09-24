@@ -9,7 +9,7 @@ using TechTalk.SpecFlow.Assist;
 
 namespace SeleniumPOMWalkthrough.BDD
 {
-    [Binding]
+    //[Binding]
     [Scope(Feature = "Inventory")]
     public class InventorySteps : AP_SharedSteps
     {
