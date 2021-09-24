@@ -15,7 +15,11 @@ namespace SeleniumPOMWalkthrough.lib.pages
         private IWebElement _backpackButton => _seleniumDriver.FindElement(By.Id("add-to-cart-sauce-labs-backpack"));
         private IWebElement _header => _seleniumDriver.FindElement(By.Id("header_container"));
 
+        private IWebElement _checkoutButton => _seleniumDriver.FindElement(By.Id("checkout"));
 
+        private IWebElement _continueButton => _seleniumDriver.FindElement(By.Id("continue"));
+
+        private IWebElement _finishButton => _seleniumDriver.FindElement(By.Id("finish"));
         public AP_UserPage(IWebDriver seleniumDriver)
         {
             _seleniumDriver = seleniumDriver;
@@ -25,6 +29,10 @@ namespace SeleniumPOMWalkthrough.lib.pages
         public string GetHeaderText() => _header.Text;
 
         public void AddBackPackToCart() => _backpackButton.Click();
+
+        public void Checkout() => _checkoutButton.Click();
+        public void Continue() => _continueButton.Click();
+        public void Finish() => _finishButton.Click();
 
         public int NumberOfItemsInCart()
         {
@@ -36,5 +44,14 @@ namespace SeleniumPOMWalkthrough.lib.pages
             //}
             return Int32.Parse(_shoppingCartButton.Text);
         }
+
+        private IWebElement _firstNameField => _seleniumDriver.FindElement(By.Id("first-name"));
+        private IWebElement _lastNameField => _seleniumDriver.FindElement(By.Id("last-name"));
+        private IWebElement _zipCodeField => _seleniumDriver.FindElement(By.Id("postal-code"));
+
+
+        public void InputFirstName(string firstName) => _firstNameField.SendKeys(firstName);
+        public void InputLastName(string lastName) =>_lastNameField.SendKeys(lastName);
+        public void InputZipCode(string zipCode) => _zipCodeField.SendKeys(zipCode);
     }
 }

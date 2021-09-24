@@ -14,15 +14,15 @@ namespace SeleniumPOMWalkthrough.BDD
     public class InventorySteps : AP_SharedSteps
     {
 
-        [Given(@"I login successfully with the credentials")]
-        public void GivenILoginSuccessfullyWithTheCredentials(Table table)
-        {
-            base.GivenIAmOnTheHomepage();
-            base.GivenIEnterTheFollowingCredentials(table);
-            base.WhenIEnterTheseCredentials();
-            base.WhenIClickTheLoginButton();
-            base.ThenIShouldBeLoggedInAndSentToTheInventoryPage();
-        }
+        //[Given(@"I login successfully with the credentials")]
+        //public void GivenILoginSuccessfullyWithTheCredentials(Table table)
+        //{
+        //    base.GivenIAmOnTheHomepage();
+        //    base.GivenIEnterTheFollowingCredentials(table);
+        //    base.WhenIEnterTheseCredentials();
+        //    base.WhenIClickTheLoginButton();
+        //    base.ThenIShouldBeLoggedInAndSentToTheInventoryPage();
+        //}
 
         [When(@"I click the Backpack's ADD TO CART button")]
         public void WhenIClickTheBackpackSADDTOCARTButton()
@@ -33,7 +33,8 @@ namespace SeleniumPOMWalkthrough.BDD
         [Then(@"Cart's Badge number goes up by one")]
         public void ThenCartSBadgeNumberGoesUpByOne()
         {
-            Assert.That(AP_Website.AP_UserPage.NumberOfItemsInCart(), Is.EqualTo(1)); 
+            Assert.That(AP_Website.AP_UserPage.NumberOfItemsInCart(), Is.EqualTo(1));
         }
+
     }
 }

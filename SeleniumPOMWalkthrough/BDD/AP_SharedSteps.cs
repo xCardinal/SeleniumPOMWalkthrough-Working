@@ -12,6 +12,8 @@ using TechTalk.SpecFlow.Assist;
 
 namespace SeleniumPOMWalkthrough.BDD
 {
+    //Don't inherite classes with binding
+    //have multiple sharing steps
     public class AP_SharedSteps
     {
         public AP_Website<ChromeDriver> AP_Website { get; } = new AP_Website<ChromeDriver>();

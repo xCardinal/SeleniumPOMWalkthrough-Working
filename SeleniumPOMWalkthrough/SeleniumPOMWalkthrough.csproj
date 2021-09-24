@@ -108,6 +108,7 @@
     <Compile Include="AppConfigReader.cs" />
     <Compile Include="BDD\AP_SharedSteps.cs" />
     <Compile Include="BDD\AP_SigninSteps.cs" />
+    <Compile Include="BDD\BuyingSteps.cs" />
     <Compile Include="BDD\InventorySteps.cs" />
     <Compile Include="BDD\UserJourney_001Steps.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
@@ -117,11 +118,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tests\AP_Signin_Tests.cs" />
     <Compile Include="tests\AP_UserPortal_Tests.cs" />
+    <Compile Include="tests\utils\UserDetails.cs" />
     <Compile Include="tests\utils\Credentials.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="BDD\AP_Signin.feature" />
+    <None Include="BDD\Buying.feature" />
     <None Include="BDD\Inventory.feature" />
     <None Include="ClassDiagram1.cd" />
     <None Include="BDD\FirstUserJourney.feature" />

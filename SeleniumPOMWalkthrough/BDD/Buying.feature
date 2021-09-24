@@ -1,10 +1,10 @@
-﻿Feature: FirstUserJourney
-	As a registred used of souce demo website
-	I want to be able to purchase a backpack
-	So that I can carry things.
+﻿Feature: Buying
+	As a user
+	I want to be able to input my details
+	So I can purchase what's in the cart.
 
-@userjourney @happypath
-Scenario: Add Sauce Labs Backpack to the cart
+@mytag
+Scenario: Purchase
 	Given I am on the homepage
     And I enter the following credentials
     | Username      | Password     |
